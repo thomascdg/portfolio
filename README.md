@@ -21,13 +21,13 @@ Le formulaire envoie les messages via une Netlify Function sur l'endpoint `/api/
 Si tu veux utiliser ton adresse Gmail pour envoyer les messages:
 
 ```env
-CONTACT_TO=codognan.thomas.pro@gmail.com
-SMTP_HOST=smtp.gmail.com
+CONTACT_TO=YOUR_RECEIVING_EMAIL
+SMTP_HOST=YOUR_SMTP_HOST
 SMTP_PORT=465
 SMTP_SECURE=true
-SMTP_USER=codognan.thomas.pro@gmail.com
-SMTP_PASS=ton-mot-de-passe-d-application
-SMTP_FROM="Portfolio <codognan.thomas.pro@gmail.com>"
+SMTP_USER=YOUR_SMTP_USER
+SMTP_PASS=YOUR_SMTP_APP_PASSWORD
+SMTP_FROM="Portfolio <YOUR_SMTP_USER>"
 ```
 
 Il faut un mot de passe d'application Gmail, pas ton mot de passe principal.
