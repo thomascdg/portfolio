@@ -6,7 +6,7 @@
     <title>Portfolio | Thomas Codognan</title>
     <meta
       name="description"
-      content="Portfolio de Thomas Codognan: projets web, parcours et compétences en développement et marketing digital."
+      content="Portfolio de Thomas Codognan: étudiant en génie logiciel, projets IA, bots, optimisation et compétences techniques."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <canvas class="bg-motion" aria-hidden="true"></canvas>
     <div class="noise"></div>
 
     <header class="site-header" id="top">
@@ -31,9 +32,9 @@
 
       <nav id="main-nav" class="main-nav">
         <a href="#about">À propos</a>
-        <a href="#skills">Expertises</a>
+        <a href="#skills">Compétences</a>
         <a href="#work">Portfolio</a>
-        <a href="#timeline">Parcours</a>
+        <a href="#timeline">Formation</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -42,11 +43,12 @@
       <section class="hero section">
         <p class="eyebrow">Portfolio 2026</p>
         <h1>
-            Etudiant en génie logiciel 
-          <span>J'adore trouver des solutions a des problèmes donnés</span>
+          Étudiant en génie logiciel
+          <span>Passionné par les défis techniques et la recherche de solutions concrètes</span>
         </h1>
         <p class="lead">
-          Je concois des solutions innovantes en génie logiciel. Voici une sélection de mon univers professionnel.
+          Je développe des applications utiles, performantes et bien structurées, avec
+          un fort intérêt pour construction d'architecture solides et évolutives dans le temps .
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">Voir mes projets</a>
@@ -57,125 +59,135 @@
       <section class="section about" id="about" data-reveal>
         <div>
           <p class="eyebrow">Faisons connaissance</p>
-          <h2>Un profil hybride entre développement web et stratégie digitale.</h2>
+          <h2>Persévérance , rigoureux et créatif .</h2>
         </div>
         <p>
-          Avec plusieurs années d'expérience en gestion de projets digitaux, j'accompagne
-          les entreprises dans la création de sites vitrines, de plateformes et de
-          parcours utilisateurs efficaces. Ma valeur ajoutée: traduire les besoins métier
-          en expériences concrètes, rapides et élégantes.
+          Je suis un étudiant passionné par l'informatique et le sport, toujours prêt à me dépasser et à relever
+          de nouveaux défis. À l'aise à l'oral, j'aime découvrir, rencontrer et partager.
+          Le triathlon et l'escalade m'ont appris la rigueur, la persévérance et le
+          dépassement de soi, des qualités que j'applique à chaque projet logiciel.
         </p>
       </section>
 
       <section class="section skills" id="skills" data-reveal>
-        <p class="eyebrow">À votre service</p>
-        <h2>Compétences clés</h2>
+        <p class="eyebrow">Mes compétences</p>
+        <h2>Soft skills, langages pratiqués et stack technique</h2>
 
         <div class="cards">
           <article class="card">
-            <h3>Frameworks</h3>
-            <p>Conception de solutions robustes avec des stacks modernes front et back.</p>
+            <h3>Persévérant</h3>
+            <p>Je garde le cap jusqu'à obtenir un résultat fiable et propre.</p>
           </article>
           <article class="card">
-            <h3>Veille Tech</h3>
-            <p>Curiosité continue pour sélectionner les bons outils au bon moment.</p>
+            <h3>Communication</h3>
+            <p>À l'aise à l'oral, j'apprécie les échanges clairs et constructifs.</p>
           </article>
           <article class="card">
-            <h3>Ergonomie</h3>
-            <p>Interfaces intuitives, architecture claire et attention au détail UX.</p>
+            <h3>Travail en équipe</h3>
+            <p>J'aime collaborer et faire progresser un projet collectivement.</p>
           </article>
           <article class="card">
-            <h3>Passion</h3>
-            <p>Une implication forte à chaque étape: cadrage, production et livraison.</p>
+            <h3>Anglais B2-C1</h3>
+            <p>Bonne compréhension technique et communication efficace en contexte pro.</p>
           </article>
+        </div>
+
+        <div class="tech-stack">
+          <h3>Langages et technologies</h3>
+          <ul class="stack-list">
+            <li>Vue</li>
+            <li>C</li>
+            <li>Java 17</li>
+            <li>Python</li>
+            <li>OCaml</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>HTML / CSS</li>
+            <li>TypeScript</li>
+            <li>React 18</li>
+            <li>Vite</li>
+          </ul>
         </div>
       </section>
 
       <section class="section work" id="work" data-reveal>
         <p class="eyebrow">Portfolio</p>
-        <h2>Dernières expériences</h2>
+        <h2>Projets réalisés</h2>
 
         <div class="projects">
           <article class="project">
-            <h3>Auris Audition</h3>
-            <p>Site vitrine premium avec optimisation locale SEO et tunnel de contact.</p>
-            <span>WordPress · SEO local</span>
+            <h3>Bot Discord</h3>
+            <p>
+              Développement complet d'un bot capable de gérer des commandes essentielles
+              (exclure, mute, ping). Intégration d'une base SQL pour se connecter
+              automatiquement à mon emploi du temps et le renvoyer à la demande.
+            </p>
+            <span>JavaScript · SQL · API</span>
           </article>
           <article class="project">
-            <h3>Meier Serrurerie</h3>
-            <p>Refonte conversion-first, identité visuelle clarifiée et tracking marketing.</p>
-            <span>WordPress · Analytics</span>
+            <h3>IA de recherche</h3>
+            <p>
+              Conception d'un modèle d'IA prédisant les survivants d'un crash de bateau
+              avec 90% de réussite. Travail approfondi sur la préparation de données,
+              l'entraînement de modèles et l'analyse des résultats.
+            </p>
+            <span>Python · SQL · IA</span>
           </article>
           <article class="project">
-            <h3>ZeroWaste</h3>
-            <p>Application mobile multi-plateformes centrée sur la réduction des déchets.</p>
-            <span>Ionic · UX mobile</span>
-          </article>
-          <article class="project">
-            <h3>SA Senior</h3>
-            <p>Application web métier: parcours simplifié pour les besoins administratifs.</p>
-            <span>Symfony · UI System</span>
-          </article>
-          <article class="project">
-            <h3>Indian Palace</h3>
-            <p>Site vitrine orienté storytelling visuel et réservation rapide.</p>
-            <span>HTML/CSS/JS</span>
-          </article>
-          <article class="project">
-            <h3>Simplification de données</h3>
-            <p>Outil interne de structuration et fiabilisation des données clients.</p>
-            <span>ASP.NET · Data quality</span>
+            <h3>Paletization Optimizer</h3>
+            <p>
+              Application web d'optimisation d'empilage sur palettes avec algorithme
+              Extreme Points, validation de stabilité, moteur multi-palettes, packing
+              incrémental et visualisation 3D interactive en temps réel.
+            </p>
+            <span>React 18 · TypeScript · Three.js · Zustand · Vite</span>
           </article>
         </div>
       </section>
 
       <section class="section timeline" id="timeline" data-reveal>
         <p class="eyebrow">Formation</p>
-        <h2>Parcours académique</h2>
+        <h2>Parcours</h2>
 
         <ol>
           <li>
-            <strong>2017 - 2018</strong>
-            <p>Licence pro CDW en alternance - conception et développement web/mobile.</p>
+            <strong>Aujourd'hui</strong>
+            <p>Master en génie logiciel à l'université de bordeaux</p>
           </li>
           <li>
-            <strong>2014 - 2016</strong>
-            <p>BTS SIO SLAM - spécialisation solutions logicielles.</p>
-          </li>
-          <li>
-            <strong>2014</strong>
-            <p>BAC STMG SIG - socle en gestion de l'information.</p>
-          </li>
-          <li>
-            <strong>Avant 2014</strong>
-            <p>Passion initiale pour l'informatique et la programmation.</p>
+            <strong>2022-2025</strong>
+            <p>Licence en informatique a l'université de bordeaux</p>
           </li>
         </ol>
       </section>
 
       <section class="section cta" data-reveal>
-        <h2>Consultez mon CV en ligne</h2>
-        <a class="btn btn-primary" href="#" aria-label="Ouvrir le CV en ligne">Voir le CV</a>
+        <h2>Tu veux en savoir plus sur mon profil ?</h2>
+        <a class="btn btn-primary" href="#contact" aria-label="Aller à la section contact">Me contacter</a>
       </section>
 
       <section class="section contact" id="contact" data-reveal>
         <p class="eyebrow">Contact</p>
-        <h2>Parlons de votre projet</h2>
+        <h2>Parlons de ton projet</h2>
+        <p class="form-note">
+          Le message part directement vers ma boîte mail depuis le serveur du site.
+        </p>
 
-        <form>
+        <form id="contact-form">
           <label>
             Nom et prénom
-            <input type="text" name="name" placeholder="Votre nom" required />
+            <input type="text" name="name" placeholder="Votre nom" autocomplete="name" required />
           </label>
           <label>
             Email
-            <input type="email" name="email" placeholder="vous@exemple.com" required />
+            <input type="email" name="email" placeholder="vous@exemple.com" autocomplete="email" required />
           </label>
           <label>
             Message
             <textarea name="message" rows="5" placeholder="Parlez-moi de votre besoin" required></textarea>
           </label>
           <button type="submit" class="btn btn-outline">Envoyer</button>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </section>
     </main>

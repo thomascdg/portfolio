@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-thomas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio personnel de Thomas avec formulaire de contact Netlify",
+  "scripts": {
+    "start": "netlify dev",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "nodemailer": "^8.0.7",
+    "netlify-cli": "^17.32.3"
+  }
+}
